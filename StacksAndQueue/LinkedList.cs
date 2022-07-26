@@ -25,7 +25,7 @@ namespace StacksAndQueue
             }
         }
 
-        int pop()
+       public int pop()
         {
             int deleted = head.data;
             head = head.next;
@@ -68,9 +68,26 @@ namespace StacksAndQueue
             Node temp = head;
             while (temp != null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " ");
                 temp = temp.next;
             }
+        }
+
+        public int peek()
+        {
+            return head.data;
+        }
+
+        public int size()
+        {
+            int count = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                temp = temp.next;
+                count++;
+            }
+            return count;
         }
     }
 }
