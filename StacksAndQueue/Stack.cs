@@ -25,5 +25,23 @@ namespace StacksAndQueue
         {
             linkedlist.display();
         }
+
+        public void peek()
+        {
+            Console.WriteLine( linkedlist.peek());
+        }
+
+        public bool isEmpty()
+        {
+            if (linkedlist.size() == 0)
+                return true;
+            else
+                return false;
+        }
+
+        public int pop()
+        {
+            return linkedlist.pop();
+        }
     }
 }
