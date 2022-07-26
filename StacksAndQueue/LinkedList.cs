@@ -33,7 +33,7 @@ namespace StacksAndQueue
         }
 
 
-        void removeLast()
+        void RemoveLast()
         {
             Node temp = head;
             while (temp.next.next != null)
@@ -44,7 +44,7 @@ namespace StacksAndQueue
         }
 
 
-        public void append(int data)
+        public void Append(int data)
         {
             Node node = new Node(data);
             if (head == null)
