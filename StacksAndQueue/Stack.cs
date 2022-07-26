@@ -43,5 +43,8 @@ namespace StacksAndQueue
         {
             return linkedlist.pop();
         }
+
+      
+       
     }
 }
